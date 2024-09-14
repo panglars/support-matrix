@@ -90,6 +90,26 @@ LOGO=archlinux-logo
 
 [![asciicast](https://asciinema.org/a/X6MYCn6vv0n6Es38KHhC1uOmc.svg)](https://asciinema.org/a/X6MYCn6vv0n6Es38KHhC1uOmc)
 
+## 软件包测试结果
+
+通过[lintestor](https://github.com/255doesnotexist/lintestor)自动测试
+
+| 软件包     | 种类    | 手动测试 |
+|:-----------|:--------|:---------|
+| clang      | package | ✅       |
+| cmake      | package | ✅       |
+| gcc        | package | ✅       |
+| gdb        | package | ✅       |
+| golang     | package | ✅       |
+| llvm       | package | ✅       |
+| nginx      | package | ✅       |
+| nodejs     | package | ✅       |
+| perl       | package | ✅       |
+| python     | package | ✅       |
+| rust       | package | ✅       |
+| openssl    | package | ✅       |
+
+
 ## 测试判定标准
 
 测试成功：实际结果与预期结果相符。
