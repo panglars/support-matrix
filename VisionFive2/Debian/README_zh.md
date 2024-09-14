@@ -82,44 +82,43 @@ user@starfive:~$
 
 [![asciicast](https://asciinema.org/a/CCoYSyfdX7TWoiXM8Kct8nTVF.svg)](https://asciinema.org/a/CCoYSyfdX7TWoiXM8Kct8nTVF)
 
-## 软件包测试结果矩阵
+## 软件包测试结果
 
 通过[lintestor](https://github.com/255doesnotexist/lintestor)自动测试
 
-| 软件包 | 种类 | debian |
-|:------|:-----| :-------|
-| apache | package | ✅  |
-| clang | package | ✅  |
-| cmake | package | ✅  |
-| docker | package | skip  |
-| erlang | package | ✅  |
-| gcc | package | ✅  |
-| gdb | package | ✅  |
-| golang | package | ✅  |
-| haproxy | package | ✅  |
-| libmemcached | package | ✅  |
-| lighttpd | package | ✅  |
-| llvm | package | ✅  |
-| mariadb | package | ✅  |
-| nginx | package | ✅  |
-| nodejs | package | ✅  |
-| numpy | package | ✅  |
-| ocaml | package | ✅  |
-| openjdk | package | ✅  |
-| perl | package | ✅  |
-| python | package | ✅  |
-| ruby | package | ✅  |
-| rust | package | ✅  |
-| sqlite | package | ✅  |
-| varnish | package | ✅  |
-| openssl | package | ✅  |
-| postgresql | package | ✅  |
-| redis | package | ✅  |
-| runc | package | ✅  |
-| scipy | package | ✅  |
-| squid | package | ✅  |
-| zookeeper | package | ✅  |
-
+| 软件包       | 种类    | debian | 手动测试 |
+|:-------------|:--------|:-------|:---------|
+| apache       | package | ✅     | ✅       |
+| clang        | package | ✅     | ✅       |
+| cmake        | package | ✅     | ✅       |
+| docker       | package |        |          |
+| erlang       | package | ✅     | ✅       |
+| gcc          | package | ✅     | ✅       |
+| gdb          | package | ✅     | ✅       |
+| golang       | package | ✅     |          |
+| haproxy      | package | ✅     |          |
+| libmemcached | package | ✅     |          |
+| lighttpd     | package | ✅     |          |
+| llvm         | package | ✅     | ✅       |
+| mariadb      | package | ✅     |          |
+| nginx        | package | ✅     | ✅       |
+| nodejs       | package | ✅     | ✅       |
+| numpy        | package | ✅     |          |
+| ocaml        | package | ✅     |          |
+| openjdk      | package | ✅     |          |
+| perl         | package | ✅     | ✅       |
+| python       | package | ✅     | ✅       |
+| ruby         | package | ✅     |          |
+| rust         | package | ✅     | ✅       |
+| sqlite       | package | ✅     |          |
+| varnish      | package | ✅     |          |
+| openssl      | package | ✅     | ✅       |
+| postgresql   | package | ✅     |          |
+| redis        | package | ✅     | ✅       |
+| runc         | package | ✅     |          |
+| scipy        | package | ✅     |          |
+| squid        | package | ✅     |          |
+| zookeeper    | package | ✅     |          |
 
 ## 测试判定标准
 
