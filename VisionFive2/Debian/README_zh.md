@@ -95,8 +95,8 @@ user@starfive:~$
 | erlang       | package | ✅     | ✅       |
 | gcc          | package | ✅     | ✅       |
 | gdb          | package | ✅     | ✅       |
-| golang       | package | ✅     |          |
-| haproxy      | package | ✅     |          |
+| golang       | package | ✅     | ✅       |
+| haproxy      | package | ✅     | ✅       |
 | libmemcached | package | ✅     |          |
 | lighttpd     | package | ✅     |          |
 | llvm         | package | ✅     | ✅       |
@@ -104,7 +104,7 @@ user@starfive:~$
 | nginx        | package | ✅     | ✅       |
 | nodejs       | package | ✅     | ✅       |
 | numpy        | package | ✅     |          |
-| ocaml        | package | ✅     |          |
+| ocaml        | package | ✅     | ✅       |
 | openjdk      | package | ✅     |          |
 | perl         | package | ✅     | ✅       |
 | python       | package | ✅     | ✅       |
@@ -115,7 +115,7 @@ user@starfive:~$
 | openssl      | package | ✅     | ✅       |
 | postgresql   | package | ✅     |          |
 | redis        | package | ✅     | ✅       |
-| runc         | package | ✅     |          |
+| runc         | package |        |          |
 | scipy        | package | ✅     |          |
 | squid        | package | ✅     |          |
 | zookeeper    | package | ✅     |          |
