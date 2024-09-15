@@ -108,9 +108,9 @@ user@starfive:~$
 | openjdk      | package | ✅     |          |
 | perl         | package | ✅     | ✅       |
 | python       | package | ✅     | ✅       |
-| ruby         | package | ✅     |          |
+| ruby         | package | ✅     | ✅       |
 | rust         | package | ✅     | ✅       |
-| sqlite       | package | ✅     |          |
+| sqlite       | package | ✅     | ✅       |
 | varnish      | package | ✅     |          |
 | openssl      | package | ✅     | ✅       |
 | postgresql   | package | ✅     |          |

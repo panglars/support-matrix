@@ -94,20 +94,23 @@ LOGO=archlinux-logo
 
 通过[lintestor](https://github.com/255doesnotexist/lintestor)自动测试
 
-| 软件包     | 种类    | 手动测试 |
-|:-----------|:--------|:---------|
-| clang      | package | ✅       |
-| cmake      | package | ✅       |
-| gcc        | package | ✅       |
-| gdb        | package | ✅       |
-| golang     | package | ✅       |
-| llvm       | package | ✅       |
-| nginx      | package | ✅       |
-| nodejs     | package | ✅       |
-| perl       | package | ✅       |
-| python     | package | ✅       |
-| rust       | package | ✅       |
-| openssl    | package | ✅       |
+| 软件包  | 种类    | 手动测试 |
+|:--------|:--------|:---------|
+| clang   | package | ✅       |
+| cmake   | package | ✅       |
+| gcc     | package | ✅       |
+| gdb     | package | ✅       |
+| golang  | package | ✅       |
+| llvm    | package | ✅       |
+| nginx   | package | ✅       |
+| nodejs  | package | ✅       |
+| perl    | package | ✅       |
+| python  | package | ✅       |
+| ruby    | package | ✅       |
+| rust    | package | ✅       |
+| openssl | package | ✅       |
+| sqlite  | package | ✅       |
+
 
 
 ## 测试判定标准
