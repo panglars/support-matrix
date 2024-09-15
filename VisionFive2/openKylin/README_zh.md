@@ -111,8 +111,16 @@ openkylin@openkylin:~$
 | zookeeper    | package |          |
 
 ### godot
+
+需要加入启动参数
+```
+--display-driver wayland opengl_es3
+```
+
+项目管理器
 ![godot project manager](./godot1.png)
 
+编辑器与游戏运行
 ![godot editor](./godot2.png)
 
 
