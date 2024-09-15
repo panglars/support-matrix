@@ -110,6 +110,11 @@ openkylin@openkylin:~$
 | squid        | package |          |
 | zookeeper    | package |          |
 
+### godot
+![godot project manager](./godot1.png)
+
+![godot editor](./godot2.png)
+
 
 ## 测试判定标准
 
