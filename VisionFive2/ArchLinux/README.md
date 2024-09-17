@@ -89,6 +89,25 @@ Screen recording (from flashing the image to logging into the system):
 
 [![asciicast](https://asciinema.org/a/X6MYCn6vv0n6Es38KHhC1uOmc.svg)](https://asciinema.org/a/X6MYCn6vv0n6Es38KHhC1uOmc)
 
+## Software Testing Result
+
+| software | type    | manual testing |
+|:---------|:--------|:---------------|
+| clang    | package | ✅             |
+| cmake    | package | ✅             |
+| gcc      | package | ✅             |
+| gdb      | package | ✅             |
+| golang   | package | ✅             |
+| llvm     | package | ✅             |
+| nginx    | package | ✅             |
+| nodejs   | package | ✅             |
+| perl     | package | ✅             |
+| python   | package | ✅             |
+| ruby     | package | ✅             |
+| rust     | package | ✅             |
+| openssl  | package | ✅             |
+| sqlite   | package | ✅             |
+
 ## Test Criteria
 
 Successful: The actual result matches the expected result.

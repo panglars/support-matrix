@@ -82,6 +82,45 @@ Screen recording (from flashing the image to system login):
 
 [![asciicast](https://asciinema.org/a/CCoYSyfdX7TWoiXM8Kct8nTVF.svg)](https://asciinema.org/a/CCoYSyfdX7TWoiXM8Kct8nTVF)
 
+## Software Testing Result 
+
+Auto test by [lintestor](https://github.com/255doesnotexist/lintestor)
+
+| software     | type    | debian | manual testing |
+|:-------------|:--------|:-------|:---------------|
+| apache       | package | ✅     | ✅             |
+| clang        | package | ✅     | ✅             |
+| cmake        | package | ✅     | ✅             |
+| docker       | package |        |                |
+| erlang       | package | ✅     | ✅             |
+| gcc          | package | ✅     | ✅             |
+| gdb          | package | ✅     | ✅             |
+| golang       | package | ✅     | ✅             |
+| haproxy      | package | ✅     | ✅             |
+| libmemcached | package | ✅     |                |
+| lighttpd     | package | ✅     |                |
+| llvm         | package | ✅     | ✅             |
+| mariadb      | package | ✅     |                |
+| nginx        | package | ✅     | ✅             |
+| nodejs       | package | ✅     | ✅             |
+| numpy        | package | ✅     |                |
+| ocaml        | package | ✅     | ✅             |
+| openjdk      | package | ✅     |                |
+| perl         | package | ✅     | ✅             |
+| python       | package | ✅     | ✅             |
+| ruby         | package | ✅     | ✅             |
+| rust         | package | ✅     | ✅             |
+| sqlite       | package | ✅     | ✅             |
+| varnish      | package | ✅     |                |
+| openssl      | package | ✅     | ✅             |
+| postgresql   | package | ✅     |                |
+| redis        | package | ✅     | ✅             |
+| runc         | package |        |                |
+| scipy        | package | ✅     |                |
+| squid        | package | ✅     |                |
+| zookeeper    | package | ✅     |                |
+
+
 ## Test Criteria
 
 Successful: The actual result matches the expected result.

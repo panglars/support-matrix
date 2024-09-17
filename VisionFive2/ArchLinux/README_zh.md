@@ -92,8 +92,6 @@ LOGO=archlinux-logo
 
 ## 软件包测试结果
 
-通过[lintestor](https://github.com/255doesnotexist/lintestor)自动测试
-
 | 软件包  | 种类    | 手动测试 |
 |:--------|:--------|:---------|
 | clang   | package | ✅       |
