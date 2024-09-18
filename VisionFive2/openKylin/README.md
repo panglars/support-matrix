@@ -111,7 +111,7 @@ openkylin@openkylin:~$
 
 ### godot
 
-need add startup parameters
+need add parameters to startup 
 ```
 --display-driver wayland opengl_es3
 ```
