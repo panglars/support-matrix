@@ -3,14 +3,7 @@ vendor: PINE64
 product: StarPro64
 cpu: EIC7700X
 cpu_core: SiFive P550
-ram: 8GB / 16GB / 32 GB
-
-board_variant: [
-    generic,
-]
-cpu_arch: [
-    sifive-p500,
-]
+ram: 8GB/16GB/32GB
 ---
 
 # StarPro64
@@ -36,11 +29,3 @@ Reference: https://pine64.org/documentation/StarPro64/_full/#specifications
   - 2× USB3.0 Dedicated Host port
   - 2× USB2.0 Shared Host port
 - **Power**: 12V DC
-
-## Supported Operating Systems
-- deepin - 25
-
-## Test Results
-| Software Category | Package Name | Test Results (Test Report) |
-|-------------------|--------------|----------------------------|
-| deepin Image Boot | N/A          | Success                    |
