@@ -1,9 +1,9 @@
 ---
 sys: bianbu
-sys_ver: "3.0"
+sys_ver: 3.0.1
 sys_var: minimal
 status: basic
-last_update: 2025-08-10
+last_update: 2025-11-02
 ---
 
 # Bianbu BIT-BRICK K1 Test Report
@@ -12,7 +12,7 @@ last_update: 2025-08-10
 
 ### System Information
 
-- Download Links: https://archive.spacemit.com/image/k1/version/bianbu/v3.0/
+- Download Links: https://archive.spacemit.com/image/k1/version/bianbu/v3.0.1/
 - Reference Installation Document: https://docs.bit-brick.com/docs/k1/getting-started/preparation
 
 ### Hardware Information
@@ -30,8 +30,8 @@ last_update: 2025-08-10
 After downloading and extracting the image, use `dd` to flash the image to the microSD card.
 
 ```bash
-unzip bianbu-25.04-minimal-k1-v3.0-release-20250725114639.img.zip
-sudo dd if=bianbu-25.04-minimal-k1-v3.0-release-20250725114639.img of=/dev/<your-device> bs=1M status=progress
+unzip bianbu-25.04-minimal-k1-v3.0.1-release-20250815180414.img.zip
+sudo dd if=bianbu-25.04-minimal-k1-v3.0.1-release-20250815180414.img of=/dev/sdX bs=1M status=progress
 ```
 
 ### Logging into the System
@@ -41,22 +41,18 @@ Logging into the system via the serial port.
 Default Username: `root`
 Default Password: `bianbu`
 
-## Expected Results
-
-The system should boot up normally and allow login through the onboard serial port.
 
 ## Actual Results
 
-The system should boot up normally and allow login through the onboard serial port.
 
 ### Boot Log
 
 ```log
 
-Bianbu 3.0 k1 ttyS0
+Bianbu 3.0.1 k1 ttyS0
 k1 login: root
 密码：
-Welcome to Bianbu 3.0 (GNU/Linux 6.6.63 riscv64)
+Welcome to Bianbu 3.0.1 (GNU/Linux 6.6.63 riscv64)
 
  * Documentation:  https://bianbu.spacemit.com
  * Support:        https://ticket.spacemit.com
@@ -69,12 +65,12 @@ Bianbu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
 applicable law.
 
 root@k1:~# uname -a
-Linux k1 6.6.63 #2.2.6.3 SMP PREEMPT Thu Jul 17 11:38:53 UTC 2025 riscv64 riscv64 riscv64 GNU/Linux
+Linux k1 6.6.63 #2.2.7.3 SMP PREEMPT Fri Aug 15 06:14:36 UTC 2025 riscv64 riscv64 riscv64 GNU/Linux
 root@k1:~# cat /etc/os-release
-PRETTY_NAME="Bianbu 3.0"
+PRETTY_NAME="Bianbu 3.0.1"
 NAME="Bianbu"
-VERSION_ID="3.0"
-VERSION="3.0 (Plucky Puffin)"
+VERSION_ID="3.0.1"
+VERSION="3.0.1 (Plucky Puffin)"
 VERSION_CODENAME=plucky
 ID=bianbu
 ID_LIKE=debian
@@ -88,7 +84,7 @@ root@k1:~# cat /proc/cpuinfo
 processor       : 0
 hart            : 0
 model name      : Spacemit(R) X60
-isa             : rv64imafdcv_zicbom_zicboz_zicntr_zicond_zicsr_zifencei_zihintpause_zihpm_zfh_zfhmin_zca_zcd_zba_zbb_zbc_zbs_zkt_zve32f_zve32x_zve64d_zve64f_zve64x_zvfh_zvfhmin_zvkt_sscofpmf_sstc_svinval_svnapot_svpbmt
+isa             : rv64imafdcv_zicbom_zicboz_zicntr_zicond_zicsr_zifencei_zihintpause_zihpm_zfh_zfhmin_zca_zcd_zba_zbb_zbc_zbs_zkt_zve32f_zve32x_zve64d_zve64f_zve64x_zvfh_zvfhmin_zvkt_sscofpmf_sstc_svinval_svnapot_svpbmt_ime
 mmu             : sv39
 uarch           : spacemit,x60
 mvendorid       : 0x710
@@ -98,7 +94,7 @@ mimpid          : 0x1000000049772200
 processor       : 1
 hart            : 1
 model name      : Spacemit(R) X60
-isa             : rv64imafdcv_zicbom_zicboz_zicntr_zicond_zicsr_zifencei_zihintpause_zihpm_zfh_zfhmin_zca_zcd_zba_zbb_zbc_zbs_zkt_zve32f_zve32x_zve64d_zve64f_zve64x_zvfh_zvfhmin_zvkt_sscofpmf_sstc_svinval_svnapot_svpbmt
+isa             : rv64imafdcv_zicbom_zicboz_zicntr_zicond_zicsr_zifencei_zihintpause_zihpm_zfh_zfhmin_zca_zcd_zba_zbb_zbc_zbs_zkt_zve32f_zve32x_zve64d_zve64f_zve64x_zvfh_zvfhmin_zvkt_sscofpmf_sstc_svinval_svnapot_svpbmt_ime
 mmu             : sv39
 uarch           : spacemit,x60
 mvendorid       : 0x710
@@ -108,7 +104,7 @@ mimpid          : 0x1000000049772200
 processor       : 2
 hart            : 2
 model name      : Spacemit(R) X60
-isa             : rv64imafdcv_zicbom_zicboz_zicntr_zicond_zicsr_zifencei_zihintpause_zihpm_zfh_zfhmin_zca_zcd_zba_zbb_zbc_zbs_zkt_zve32f_zve32x_zve64d_zve64f_zve64x_zvfh_zvfhmin_zvkt_sscofpmf_sstc_svinval_svnapot_svpbmt
+isa             : rv64imafdcv_zicbom_zicboz_zicntr_zicond_zicsr_zifencei_zihintpause_zihpm_zfh_zfhmin_zca_zcd_zba_zbb_zbc_zbs_zkt_zve32f_zve32x_zve64d_zve64f_zve64x_zvfh_zvfhmin_zvkt_sscofpmf_sstc_svinval_svnapot_svpbmt_ime
 mmu             : sv39
 uarch           : spacemit,x60
 mvendorid       : 0x710
@@ -118,7 +114,7 @@ mimpid          : 0x1000000049772200
 processor       : 3
 hart            : 3
 model name      : Spacemit(R) X60
-isa             : rv64imafdcv_zicbom_zicboz_zicntr_zicond_zicsr_zifencei_zihintpause_zihpm_zfh_zfhmin_zca_zcd_zba_zbb_zbc_zbs_zkt_zve32f_zve32x_zve64d_zve64f_zve64x_zvfh_zvfhmin_zvkt_sscofpmf_sstc_svinval_svnapot_svpbmt
+isa             : rv64imafdcv_zicbom_zicboz_zicntr_zicond_zicsr_zifencei_zihintpause_zihpm_zfh_zfhmin_zca_zcd_zba_zbb_zbc_zbs_zkt_zve32f_zve32x_zve64d_zve64f_zve64x_zvfh_zvfhmin_zvkt_sscofpmf_sstc_svinval_svnapot_svpbmt_ime
 mmu             : sv39
 uarch           : spacemit,x60
 mvendorid       : 0x710
@@ -169,12 +165,6 @@ root@k1:~#
 ```
 
 
-## Test Criteria
-
-Successful: The actual result matches the expected result.
-
-Failed: The actual result does not match the expected result.
-
 ## Test Conclusion
 
-Successful
+The system should boot up normally and allow login through the onboard serial port.
