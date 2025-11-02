@@ -2,7 +2,6 @@
 sys: debian
 sys_ver: "13"
 sys_var: null
-
 status: basic
 last_update: 2025-10-22
 ---
@@ -13,8 +12,8 @@ last_update: 2025-10-22
 
 ### Operating System Information
 
-- System Version: Debian
-- `sudo debootstrap --arch=riscv64 trixie rootfs http://deb.debian.org/debian`
+- System Version: Debian Trixie
+- From `sudo debootstrap --arch=riscv64 trixie rootfs http://deb.debian.org/debian` to make rootfs burn to SDcard
 
 ### Hardware Information
 
@@ -29,35 +28,7 @@ last_update: 2025-10-22
 * https://github.com/smaeul/u-boot.git
 * https://github.com/jamesgraves/licheerv-debian-linux/blob/main/licheerv_linux_defconfig
 
-### Required Package
-
-* riscv64-linux-gnu-gcc
-* debootstrap
-* Hard Disk tools
-
-## Test Criteria
-
-Succeed：
-
-Debian and shell running successfully
-
-Failed:
-
-No output
-
-## Expected Results
-
-Debian and shell running successfully
-
-## Actual Results
-
-Debian and shell running successfully
-
-## Test Conclusion
-
-Running successfully
-
-## Specific Steps
+## Installation Steps
 
 ### OpenSBI
 
@@ -229,30 +200,13 @@ sudo dd if=./rootfs.img of=/dev/sdb2 bs=4096
 sync
 ```
 
-### Starting Phase
-
-1. Put SD card on the board
-2. Connect it with your computer(via USB to UART debugger and `screen`)
-3. Power on
-
-### Verify system information
-
-1. Login with root
-
-then,
-
-* `uname -a` 
-* `cat /etc/os-release`
-* `cat /proc/cpuinfo`
+## Actual Results
 
 ### neofetch
 
 ![neofetch](./neofetch.jpg)
 
-
-## Basic Info
-
-### log 
+### Boot Log
 
 ```
 root@wdhyb-ThinkPad-X1-Carbon-3rd:~# uname -a
@@ -279,6 +233,7 @@ marchid         : 0x0
 mimpid          : 0x0
 ```
 
+## Test Conclusion
 
-
+The system should boot up normally and allow login through the onboard serial port.
 

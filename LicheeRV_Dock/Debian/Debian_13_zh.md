@@ -5,15 +5,14 @@
 ### 操作系统信息
 
 - 系统版本：Debian 13 Trixie
-- 来源：
+- 来源：通过 `sudo debootstrap --arch=riscv64 trixie rootfs http://deb.debian.org/debian` 创建一个 rootfs烧录到内存卡
 
-通过
+### 硬件信息
 
-`sudo debootstrap --arch=riscv64 trixie rootfs http://deb.debian.org/debian`
-
-创建一个 rootfs
-
-烧录到内存卡
+- Sipeed Lichee RV Dock 一块
+- 电源适配器一个
+- MicroSD 卡一张(推荐大于 8 GB)
+- USB to UART 调试器一个
 
 ### 涉及的仓库
 
@@ -21,45 +20,8 @@
 * https://github.com/smaeul/u-boot.git
 * https://github.com/jamesgraves/licheerv-debian-linux/blob/main/licheerv_linux_defconfig
 
-### 硬件信息
 
-- Sipeed Lichee RV Dock 一块
-- 电源适配器一个
-- MicroSD 卡一张(推荐大于 8 GB)
-- CH340 一个(tx 接 rx 需要接通 GND)
-
-### 所需前置内容
-
-软件包：
-
-* riscv64-linux-gnu-gcc
-* debootstrap
-* 磁盘操作工具(任意)
-* screen(可选)
-
-## 测试判定标准
-
-测试成功：实际结果与预期结果相符。
-
-正常启动 Debian 并正常运行 shell
-
-测试失败：实际结果与预期结果不符。
-
-串口无输出 无法启动
-
-## 预期结果
-
-正常刷写与启动。
-
-## 实际结果
-
-正常刷写与启动。
-
-## 测试结论
-
-正常启动。
-
-## 实现步骤
+## 安装步骤
 
 ### OpenSBI
 
@@ -236,31 +198,13 @@ sudo dd if=./rootfs.img of=/dev/sdb2 bs=4096
 sync
 ```
 
-### 启动测试
-
-1. SD 卡插进卡槽
-2. 连接串口
-3. 连接电源
-
-注：此处使用了 screen 进行调试 成功启动的话就可以进入 shell 进行操作了
-
-### 验证系统信息
-
-1. 登录进入 root 用户
-
-* `uname -a` 
-* `cat /etc/os-release`
-* `cat /proc/cpuinfo`
+## 实际结果
 
 ### neofetch
 
-如下
-
 ![neofetch](./neofetch.jpg)
 
-## 基本信息
-
-### 以下是收集的 log
+### 启动信息
 
 ```
 root@wdhyb-ThinkPad-X1-Carbon-3rd:~# uname -a
@@ -287,5 +231,6 @@ marchid         : 0x0
 mimpid          : 0x0
 ```
 
+## 测试结论
 
-
+系统正常启动，能够通过串口登录。
