@@ -2,9 +2,9 @@
 product: DC-ROMA Mainboard II
 cpu: EIC7702X
 cpu_core: SiFive P550
-ram: 32G
+ram: 32G/64G
 vendor: DeepComputing
 ---
 
-# DC-ROMA RISC-V AI PC, RISC-V Mainboard II
+# DC-ROMA RISC-V AI PC / RISC-V Mainboard II
 

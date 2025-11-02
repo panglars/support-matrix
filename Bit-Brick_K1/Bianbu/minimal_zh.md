@@ -33,9 +33,7 @@ sudo dd if=bianbu-25.04-minimal-k1-v3.0.1-release-20250815180414.img of=/dev/sdX
 默认用户名： `root`
 默认密码： `bianbu`
 
-
 ## 实际结果
-
 
 ### 启动信息
 
